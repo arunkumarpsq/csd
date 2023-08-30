@@ -5,7 +5,7 @@ function orderlistorder_details_endpoint_content() {
 	$current_user_id = $current_user->ID;
 	$ordermeta = get_order_meta_using_user_role();
 	if(current_user_can('dealer')){ ?>
-		<div class="woocommerce-error">Not allowed to access this page. Return to <a href="<?php echo site_url();?>/my-account/" class="wc-forward">My account</a></div>
+		<div class="woocommerce-error"> Not allowed to access this page. Return to <a href="<?php echo site_url();?>/my-account/" class="wc-forward">My account</a></div>
 	<?php
 	} else {
 		$order_id = isset($_GET['id'])?$_GET['id']:'';
